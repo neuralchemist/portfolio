@@ -1,0 +1,26 @@
+.floating-avatar-animation {
+  /* center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 8px 0;
+  /* animate */
+  transform: translateY(0px);
+  animation: float-animation 8s ease-in-out infinite;
+}
+
+@keyframes float-animation {
+  0% {
+    box-shadow: 0 4px 16px 0px rgba(0, 0, 0, 0.6);
+    transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 24px 16px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+  }
+  100% {
+    box-shadow: 0 4px 16px 0px rgba(0, 0, 0, 0.6);
+    transform: translateY(0px);
+  }
+}
