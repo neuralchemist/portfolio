@@ -1,7 +1,4 @@
 import React from "react";
-// mui 5
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 // custom styles
 import { QuoteTypography } from "./styledComponents";
 
