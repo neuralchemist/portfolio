@@ -1,7 +1,6 @@
 import React from "react";
 // mui 5
 import CardHeader from "@mui/material/CardHeader";
-import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -9,7 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { Project } from "../utils/types";
 // custom components
 import { CustomButton, CustomCard } from "./styledComponents";
-import { CustomCardContent } from "./styledComponents";
+import { CustomCardContent, StyledCardActions } from "./styledComponents";
 
 type Props = {
   project: Project;
@@ -21,18 +20,11 @@ function ProjectCard({ project }: Props) {
       <CardHeader title={project.name} />
 
       <CustomCardContent>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body1" color="text.secondary" textAlign="justify">
           {project.description}
         </Typography>
       </CustomCardContent>
-      <CardActions
-        sx={{
-          display: "flex",
-          justifyContent: "flex-start",
-          gap: "8px",
-          padding: "16px 0",
-        }}
-      >
+      <StyledCardActions>
         <Link
           href={project.github}
           target="_blank"
@@ -54,7 +46,7 @@ function ProjectCard({ project }: Props) {
             demo
           </CustomButton>
         </Link>
-      </CardActions>
+      </StyledCardActions>
     </CustomCard>
   );
 }

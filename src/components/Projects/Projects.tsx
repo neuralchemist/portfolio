@@ -1,16 +1,16 @@
 import React from "react";
 // custom components
 import Carousel from "../Carousel";
-import { ProjectStack, ProjectText } from "./styledComponents";
+import { StyledStack, StyledText } from "./styledComponents";
 // data
 import { projects } from "./data";
 
 function Projects() {
   return (
-    <ProjectStack>
-      <ProjectText variant="h3">Projects</ProjectText>
+    <StyledStack>
+      <StyledText variant="h3">Projects</StyledText>
       <Carousel slides={projects} />
-    </ProjectStack>
+    </StyledStack>
   );
 }
 

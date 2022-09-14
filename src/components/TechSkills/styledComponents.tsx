@@ -7,7 +7,7 @@ type Props = {
   theme: Theme;
 };
 
-export const StyledTechSkills = styled(Stack)(({ theme }: Props) => ({
+export const StyledStack = styled(Stack)(({ theme }: Props) => ({
   // border: "1px dashed white",
   flexDirection: "column",
   alignItems: "center",
