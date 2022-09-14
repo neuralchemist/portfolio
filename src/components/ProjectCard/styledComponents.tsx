@@ -2,6 +2,7 @@
 import { styled, Theme } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 
 type Props = {
@@ -21,8 +22,31 @@ export const CustomCard = styled(Card)(({ theme }: Props) => ({
 }));
 
 export const CustomCardContent = styled(CardContent)(({ theme }: Props) => ({
-  height: "90px",
-  overflow: "hidden",
+  height: "200px",
+  overflowY: "scroll",
+  "&::-webkit-scrollbar": {
+    width: "10px",
+    height: "10px",
+  },
+
+  "&::-webkit-scrollbar-thumb": {
+    background: "rgba(255, 255, 255, 0.3)",
+    borderRadius: "10px",
+    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+  },
+
+  "&::-webkit-scrollbar-track": {
+    background: "rgba(255, 255, 255, 0.1)",
+    borderRadius: "10px",
+    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+  },
+}));
+
+export const StyledCardActions = styled(CardActions)(({ theme }: Props) => ({
+  display: "flex",
+  justifyContent: "center",
+  gap: "8px",
+  padding: "16px 0",
 }));
 
 export const CustomButton = styled(Button)(({ theme }: Props) => ({

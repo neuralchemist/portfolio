@@ -6,6 +6,7 @@ import { styled, Theme } from "@mui/material/styles";
 import Topbar from "./components/Topbar";
 import Projects from "./components/Projects";
 import TechSkills from "./components/TechSkills";
+import AboutMe from "./components/AboutMe";
 
 type Props = {
   theme: Theme;
@@ -13,17 +14,18 @@ type Props = {
 
 const AppStack = styled(Stack)(({ theme }: Props) => ({
   maxWidth: "1200px",
-  margin: theme.spacing(8, 'auto'),
+  margin: theme.spacing(8, "auto"),
 }));
 
 function App() {
   const headline = "the  stoic  developer".split("");
   console.log(headline);
   return (
-    <AppStack direction="column" >
+    <AppStack direction="column">
       <Topbar />
       <Projects />
       <TechSkills />
+      <AboutMe />
     </AppStack>
   );
 }
