@@ -20,7 +20,7 @@ function ProjectCard({ project }: Props) {
       <CardHeader title={project.name} />
 
       <CustomCardContent>
-        <Typography variant="body1" color="text.secondary" textAlign="justify">
+        <Typography variant="body1" color="text.secondary" textAlign="justify" lineHeight="30px">
           {project.description}
         </Typography>
       </CustomCardContent>
