@@ -8,7 +8,7 @@ function AboutMe() {
     <StyledStack>
       <StyledText variant="h3">About Me</StyledText>
       <StyledAboutMe>
-        <Typography variant="body1" color="text.secondary" textAlign="justify">
+        <Typography variant="body1" color="text.secondary" textAlign="justify" lineHeight="30px">
           Some people want to conquer the mountains, some want to conquer the
           space. I want to embark on a journey which is much more ambitious than
           the rest - mastering the art and science of making a great software.

@@ -13,7 +13,7 @@ export const StyledStack = styled(Stack)(({ theme }: Props) => ({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  gap: theme.spacing(4),
+  gap: theme.spacing(3),
   marginTop: theme.spacing(8),
   marginBottom: theme.spacing(2),
 }));
@@ -21,7 +21,7 @@ export const StyledStack = styled(Stack)(({ theme }: Props) => ({
 export const StyledAboutMe = styled(Box)(({ theme }: Props) => ({
   width: "350px",
 //   height: "300px",
-  padding: theme.spacing(2),
+  padding: theme.spacing(3),
   border: "1px solid rgba(255, 255, 255, 0.3)",
   borderRadius: theme.spacing(2),
 
