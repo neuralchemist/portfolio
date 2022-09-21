@@ -42,7 +42,7 @@
 
 - Landing Page (mobile view)
 
-<img src="screenshots/landing-mobile.png" width="375" height="800">
+<img src="screenshots/landing-mobile.png" width="375" height="1400">
 
 
 ## Getting started
@@ -77,8 +77,6 @@ The app should be running at: [http://localhost:3000](http://localhost:3000/)
 
 These are some of the features I want to implement in future
 
-### Known Issues
-- can't access user location from mobile device
 
 ## Bootstrapped with Create React App
 
