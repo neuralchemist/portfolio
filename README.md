@@ -1,47 +1,88 @@
-# Getting Started with Create React App
+# portfolio
+
+## Table of Contents
+
+- [About](#about)
+- [Features and Stack](#features-and-stack)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+- [Future Work](#challenges)
+- [Create React App](#bootstrapped-with-create-react-app)
+
+## About
+
+**Portfolio** is a mobile friendly website to showcase projects and techstack of user. 
+
+## Features and Stack
+
+### Features
+
+- Fully responsive with support for mobile, tablet and desktop device to increase traffic.
+- Project Carousel to describe and demo projects.
+- Skills Tab to show tech skills in compressed way.
+- documented for code maintainability.
+- fully automated CI / CD pipeline implemented with github and github actions.
+- deployed and hosted in firebase.
+
+### Stack
+
+- React
+- Typescript
+- Material UI
+- Firebase
+- Github
+- Github actions
+
+## Screenshots
+
+- Landing Page (desktop view)
+
+<img src="screenshots/landing-desktop.png" width="600" height="800">
+
+
+- Landing Page (mobile view)
+
+<img src="screenshots/landing-mobile.png" width="375" height="800">
+
+
+## Getting started
+
+Below you'll find the instructions for setting up the project locally
+
+### Clone repo and install dependencies
+
+```bash
+# Clone the repo
+git clone https://github.com/neuralchemist/portfolio.git
+
+# Install dependencies
+cd portfolio
+npm install
+```
+
+
+### Start the app
+
+```bash
+# Start development server
+npm start
+```
+
+The app should be running at: [http://localhost:3000](http://localhost:3000/)
+
+## Future Work
+
+- add tech stack svg icons for each project to project description. 
+- add skeletons while loading.
+
+These are some of the features I want to implement in future
+
+### Known Issues
+- can't access user location from mobile device
+
+## Bootstrapped with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+For the detailed description of available scripts see [CRA Documentation](https://create-react-app.dev/docs/available-scripts)
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# portfolio
