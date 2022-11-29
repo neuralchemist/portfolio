@@ -23,9 +23,7 @@ const AppStack = styled(Stack)(({ theme }: Props) => ({
 function App() {
   useEffect(() => {
     // firebase analytics on home page visit
-    logEvent(analytics, "screen_view", {
-      firebase_screen: "homepage_visit",
-    });
+    logEvent(analytics, "homepage_visit");
   }, []);
   return (
     <AppStack direction="column">
