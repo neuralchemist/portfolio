@@ -1,6 +1,5 @@
 import React from "react";
 // mui 5
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { StyledPanelBox } from "./styledComponents";
 
@@ -21,7 +20,7 @@ function TabPanel({ children, value, index }: TabPanelProps) {
     >
       {value === index && (
         <StyledPanelBox>
-          <Typography>{children}</Typography>
+          {children}
         </StyledPanelBox>
       )}
     </Box>

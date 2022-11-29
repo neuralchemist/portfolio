@@ -13,7 +13,7 @@ import { TestingStackData } from "./data/TestingStackData";
 import { CICDStackData } from "./data/CICDStackData";
 import { StylingStackData } from "./data/StylingStackData";
 
-function a11yProps(index: number) {
+function allProps(index: number) {
   return {
     id: `vertical-tab-${index}`,
     "aria-controls": `vertical-tabpanel-${index}`,
@@ -37,12 +37,12 @@ function SkillsTab() {
         onChange={handleChange}
         aria-label="Vertical tabs"
       >
-        <Tab label="Environment" {...a11yProps(0)} />
-        <Tab label="Programming Language" {...a11yProps(1)} />
-        <Tab label="React" {...a11yProps(2)} />
-        <Tab label="Testing" {...a11yProps(3)} />
-        <Tab label="CI / CD" {...a11yProps(4)} />
-        <Tab label="Styling" {...a11yProps(5)} />
+        <Tab label="Environment" {...allProps(0)} />
+        <Tab label="Programming Language" {...allProps(1)} />
+        <Tab label="React" {...allProps(2)} />
+        <Tab label="Testing" {...allProps(3)} />
+        <Tab label="CI / CD" {...allProps(4)} />
+        <Tab label="Styling" {...allProps(5)} />
       </StyledTabs>
       {/* Panels */}
       <TabPanel value={value} index={0}>
