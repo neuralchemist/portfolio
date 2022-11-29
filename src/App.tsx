@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // mui 5
 import Stack from "@mui/material/Stack";
 import { styled, Theme } from "@mui/material/styles";
@@ -7,6 +7,9 @@ import Topbar from "./components/Topbar";
 import Projects from "./components/Projects";
 import TechSkills from "./components/TechSkills";
 import AboutMe from "./components/AboutMe";
+// firebase analytics
+import { logEvent } from "firebase/analytics";
+import { analytics } from "./Firebase/firebase-config";
 
 type Props = {
   theme: Theme;
@@ -18,8 +21,12 @@ const AppStack = styled(Stack)(({ theme }: Props) => ({
 }));
 
 function App() {
-  const headline = "the  stoic  developer".split("");
-  console.log(headline);
+  useEffect(() => {
+    // firebase analytics on home page visit
+    logEvent(analytics, "screen_view", {
+      firebase_screen: "homepage_visit",
+    });
+  }, []);
   return (
     <AppStack direction="column">
       <Topbar />
