@@ -17,11 +17,6 @@ export const IconStack = styled(Stack)(({ theme }: Props) => ({
   height: "100px",
 
   gap: theme.spacing(1),
-  color: "rgba(0, 0, 0, 0.6)",
-
-  "&:hover": {
-    color: "rgba(0, 0, 0, 0.8)",
-  },
 
   [theme.breakpoints.up("sm")]: {
     width: "100px",
@@ -32,8 +27,13 @@ export const IconStack = styled(Stack)(({ theme }: Props) => ({
 export const StyledIcon = styled(Box)(({ theme }: Props) => ({
   width: "30px",
   height: "30px",
+  // transition
+  transform: "scale(1)",
+  transition: " scale, 300ms ease",
+  // hover
   "&:hover": {
     transform: "scale(1.1)",
+    transition: "scale, 300ms ease",
   },
 
   [theme.breakpoints.up("sm")]: {
