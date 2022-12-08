@@ -42,8 +42,8 @@ function ProjectCard({ project }: Props) {
           rel="noopener"
           underline="none"
         >
-          <CustomButton variant="outlined" startIcon={project.icon}>
-            demo
+          <CustomButton variant="contained" color="inherit"  startIcon={project.icon}>
+            website
           </CustomButton>
         </Link>
       </StyledCardActions>
