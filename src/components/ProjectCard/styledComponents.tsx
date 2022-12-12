@@ -12,7 +12,7 @@ type Props = {
 export const CustomCard = styled(Card)(({ theme }: Props) => ({
   width: "100%",
   height: "100%",
-  padding: theme.spacing(2),
+  // padding: theme.spacing(1),
   border: "1px solid rgba(255, 255, 255, 0.3)",
   borderRadius: theme.spacing(2),
 
@@ -22,7 +22,8 @@ export const CustomCard = styled(Card)(({ theme }: Props) => ({
 }));
 
 export const CustomCardContent = styled(CardContent)(({ theme }: Props) => ({
-  height: "200px",
+  height: "220px",
+  padding: theme.spacing(2),
   overflowY: "scroll",
   "&::-webkit-scrollbar": {
     width: "10px",
