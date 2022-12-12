@@ -27,7 +27,7 @@ const backwardSlide = keyframes`
 
 export const StyledCarousel = styled(Box)(({ theme }: Props) => ({
   width: "100%",
-  height: "430px",
+  height: "470px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",

@@ -4,4 +4,5 @@ export type Project = {
   github: string;
   demo: string;
   icon: React.ReactNode;
+  techStack: string[];
 };

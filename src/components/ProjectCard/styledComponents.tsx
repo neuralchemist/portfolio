@@ -1,5 +1,6 @@
 // mui 5
 import { styled, Theme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
@@ -59,5 +60,32 @@ export const CustomButton = styled(Button)(({ theme }: Props) => ({
     fontWeight: "bold",
     border: "1px solid rgba(0, 0, 0, 0.8)",
     color: "rgba(0, 0, 0, 0.8)",
+  },
+}));
+
+export const StyledTechIcons = styled(CardActions)(({ theme }: Props) => ({
+  display: "flex",
+  justifyContent: "center",
+  gap: "8px",
+  padding: "8px 0",
+}));
+
+export const StyledIcon = styled(Box)(({ theme }: Props) => ({
+  width: "15px",
+  height: "15px",
+  // transition
+  transform: "scale(1)",
+  filter: "grayscale(0.7)",
+  transition: "filter, scale, 300ms ease",
+  // hover
+  "&:hover": {
+    transform: "scale(1.1)",
+    filter: "grayscale(0)",
+    transition: "filter, scale, 300ms ease",
+  },
+
+  [theme.breakpoints.up("sm")]: {
+    width: "20px",
+    height: "20px",
   },
 }));

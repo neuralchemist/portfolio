@@ -13,10 +13,11 @@ export const projects = [
       "It is a mobile-friendly e-commerce website that scales beautifully from small screens to big ones.",
       "The project requirements are designed using Agile methodology. Each of the feature is separated into module using SOLID and DRY design principle so that the functionality can be easily extended and reused in future.",
       "Used optimized react code and SVG images for faster page load time. The aesthetic of the UI is improved using Material UI and CSS animation to increase user engagement and conversion.",
-      "The data is fetched from Rest Api. End-to-End tested with cypress. Documentation for high code maintainability.", 
+      "The data is fetched from Rest Api. End-to-End tested with cypress. Documentation for high code maintainability.",
       "Implemented a fully automated CI / CD pipeline using github and github actions that resulted in error-free development-to-production code delivery. Complete elimination of manual deployment practice resulted in a reduction of average deployment time. Hosted on firebase.",
     ],
     icon: <StorefrontIcon />,
+    techStack: ["react", "javascript","react-router", "material-ui", "react-hook-form", "cypress",  "github", "github-action", "rest-api", "css3"],
   },
   {
     name: "The Issue Tracker",
@@ -26,11 +27,12 @@ export const projects = [
       "It is a fully responsive website for teams and companies to track and resolve issues in their projects.",
       "The app is designed using agile methodology. Used industry-standard software development  SOLID and DRY design principles so that features can be easily reused and extended in the future.",
       "Authorization, Authentication and Session is implemented using firebase. Firestore is used for data storage.",
-      "Issues are sorted and color coded according to priority. Data from the backend is cached to optimize network requests. Firestore security rules and permissions are implemented and tested using firestore CLI.", 
-      "Material UI is used to improve the aesthetic and accessibility of the UI for a better user experience. Users can toggle between dark and light themes. Documented for high code maintainability.", 
+      "Issues are sorted and color coded according to priority. Data from the backend is cached to optimize network requests. Firestore security rules and permissions are implemented and tested using firestore CLI.",
+      "Material UI is used to improve the aesthetic and accessibility of the UI for a better user experience. Users can toggle between dark and light themes. Documented for high code maintainability.",
       "Implemented a fully automated CI / CD pipeline using github and github actions that resulted in error-free development-to-production code delivery. Hosted on firebase.",
     ],
     icon: <BugReportIcon />,
+    techStack: ["react", "javascript","react-router", "material-ui", "react-hook-form", "react-query", "firebase",  "github", "github-action", "css3"],
   },
 
   {
@@ -45,6 +47,7 @@ export const projects = [
       "Implemented a fully automated CI / CD pipeline using github and github actions for rapid and  error-free development-to-production code delivery. Hosted on firebase.",
     ],
     icon: <ChildCareIcon />,
+    techStack: ["react", "typescript", "material-ui", "github", "github-action", "css3"],
   },
   {
     name: "Weather App",
@@ -57,6 +60,7 @@ export const projects = [
       "End-to-End tested with cypress. Documented for high code maintainability. Implemented a fully automated CI / CD pipeline using github and github actions. Hosted on firebase.",
     ],
     icon: <CloudIcon />,
+    techStack: ["react", "typescript", "material-ui",  "cypress", "github", "github-action", "css3", "rest-api"],
   },
   {
     name: "Euro Trip",
@@ -66,5 +70,6 @@ export const projects = [
       "A graph engine to traverse connected routes using Breadth-First-Search and Depth-First-Search",
     ],
     icon: <NavigationIcon />,
+    techStack: ["github", "github-action", "css3"],
   },
 ];

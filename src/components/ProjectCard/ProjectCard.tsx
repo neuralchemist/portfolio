@@ -9,6 +9,7 @@ import { Project } from "../utils/types";
 // custom components
 import { CustomButton, CustomCard } from "./styledComponents";
 import { CustomCardContent, StyledCardActions } from "./styledComponents";
+import TechIcons from "./TechIcons";
 
 type Props = {
   project: Project;
@@ -18,6 +19,7 @@ function ProjectCard({ project }: Props) {
   return (
     <CustomCard>
       <CardHeader title={project.name} sx={{ padding: "12px" }} />
+      <TechIcons techStack={project.techStack} />
 
       <CustomCardContent>
         {project.description.map((description, index) => (
@@ -33,6 +35,7 @@ function ProjectCard({ project }: Props) {
           </Typography>
         ))}
       </CustomCardContent>
+
       <StyledCardActions>
         <Link
           href={project.github}
