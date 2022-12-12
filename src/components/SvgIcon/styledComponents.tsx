@@ -45,8 +45,14 @@ export const StyledIcon = styled(Box)(({ theme }: Props) => ({
 export const StyledTypography = styled(Typography)(({ theme }: Props) => ({
   width: "100%",
   textAlign: "center",
-  fontSize: theme.spacing(1.25),
-  fontWeight: "bold",
+  // transition
+  transform: "scale(1)",
+  transition: " scale, 300ms ease",
+  // hover
+  "&:hover": {
+    transform: "scale(1.1)",
+    transition: "scale, 300ms ease",
+  },
 
   [theme.breakpoints.up("sm")]: {
     fontSize: theme.spacing(1.5),

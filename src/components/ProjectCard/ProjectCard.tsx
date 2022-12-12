@@ -17,12 +17,21 @@ type Props = {
 function ProjectCard({ project }: Props) {
   return (
     <CustomCard>
-      <CardHeader title={project.name} />
+      <CardHeader title={project.name} sx={{ padding: "12px" }} />
 
       <CustomCardContent>
-        <Typography variant="body1" color="text.secondary" textAlign="justify" lineHeight="30px">
-          {project.description}
-        </Typography>
+        {project.description.map((description, index) => (
+          <Typography
+            key={index}
+            variant="body1"
+            color="text.secondary"
+            textAlign="justify"
+            line-height="30px"
+            paddingY="4px"
+          >
+            {description}
+          </Typography>
+        ))}
       </CustomCardContent>
       <StyledCardActions>
         <Link
@@ -42,7 +51,11 @@ function ProjectCard({ project }: Props) {
           rel="noopener"
           underline="none"
         >
-          <CustomButton variant="contained" color="inherit"  startIcon={project.icon}>
+          <CustomButton
+            variant="contained"
+            color="inherit"
+            startIcon={project.icon}
+          >
             website
           </CustomButton>
         </Link>
