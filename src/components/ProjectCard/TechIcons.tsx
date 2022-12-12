@@ -1,7 +1,6 @@
 import React from "react";
 
 // node
-import { ReactComponent as NodejsIcon } from "../../assets/svg/nodejs-icon.svg";
 import { ReactComponent as RestApiIcon } from "../../assets/svg/restful-api.svg";
 // programming language
 import { ReactComponent as JavascriptIcon } from "../../assets/svg/javascript.svg";
