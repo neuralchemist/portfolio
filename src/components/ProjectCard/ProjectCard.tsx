@@ -16,6 +16,7 @@ type Props = {
 };
 
 function ProjectCard({ project }: Props) {
+  const isDemo = project.demo !== "";
   return (
     <CustomCard>
       <CardHeader title={project.name} sx={{ padding: "12px" }} />
@@ -48,20 +49,31 @@ function ProjectCard({ project }: Props) {
           </CustomButton>
         </Link>
 
-        <Link
-          href={project.demo}
-          target="_blank"
-          rel="noopener"
-          underline="none"
-        >
+        {isDemo ? (
+          <Link
+            href={project.demo}
+            target="_blank"
+            rel="noopener"
+            underline="none"
+          >
+            <CustomButton
+              variant="contained"
+              color="inherit"
+              startIcon={project.icon}
+            >
+              website
+            </CustomButton>
+          </Link>
+        ) : (
           <CustomButton
             variant="contained"
             color="inherit"
             startIcon={project.icon}
+            disabled
           >
             website
           </CustomButton>
-        </Link>
+        )}
       </StyledCardActions>
     </CustomCard>
   );
