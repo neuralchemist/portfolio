@@ -8,8 +8,10 @@ import { ReactComponent as TypescriptIcon } from "../../assets/svg/typescript-ic
 // git
 import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
 import { ReactComponent as GithubActionIcon } from "../../assets/svg/github-actions.svg";
-// fireabase
+// backend
 import { ReactComponent as FirebaseIcon } from "../../assets/svg/firebase.svg";
+import { ReactComponent as MongodbIcon } from "../../assets/svg/mongodb.svg";
+import { ReactComponent as NodejsIcon } from "../../assets/svg/nodejs-icon.svg";
 // react
 import { ReactComponent as ReactIcon } from "../../assets/svg/react.svg";
 import { ReactComponent as ReactRouterIcon } from "../../assets/svg/react-router.svg";
@@ -20,6 +22,9 @@ import { ReactComponent as MaterialIcon } from "../../assets/svg/material-ui.svg
 import { ReactComponent as CSS3Icon } from "../../assets/svg/css3.svg";
 // testing
 import { ReactComponent as CypressIcon } from "../../assets/svg/cypress-icon.svg";
+import { ReactComponent as ReactTestingLibraryIcon } from "../../assets/svg/testing-library.svg";
+// realtime
+import { ReactComponent as SocketioIcon } from "../../assets/svg/socketio.svg";
 // custom styles
 import { StyledTechIcons, StyledIcon } from "./styledComponents";
 
@@ -28,9 +33,9 @@ import { StyledTechIcons, StyledIcon } from "./styledComponents";
 function getIcon(name: string) {
   switch (name) {
     case "javascript":
-    return <JavascriptIcon title="javascript" width="100%" height="100%" />;
+      return <JavascriptIcon title="javascript" width="100%" height="100%" />;
     case "typescript":
-    return <TypescriptIcon title="typescript" width="100%" height="100%" />;
+      return <TypescriptIcon title="typescript" width="100%" height="100%" />;
     case "react":
       return <ReactIcon title="react" width="100%" height="100%" />;
     case "react-query":
@@ -49,6 +54,15 @@ function getIcon(name: string) {
       return <CSS3Icon title="css3" width="100%" height="100%" />;
     case "cypress":
       return <CypressIcon title="cypress" width="100%" height="100%" />;
+
+    case "react-testing-library":
+      return (
+        <ReactTestingLibraryIcon
+          title="react-testing-library"
+          width="100%"
+          height="100%"
+        />
+      );
     case "github":
       return <GithubIcon title="github" width="100%" height="100%" />;
     case "github-action":
@@ -57,8 +71,14 @@ function getIcon(name: string) {
       );
     case "firebase":
       return <FirebaseIcon title="firebase" width="100%" height="100%" />;
+    case "mongodb":
+      return <MongodbIcon title="mongodb" width="100%" height="100%" />;
     case "rest-api":
       return <RestApiIcon title="rest-api" width="100%" height="100%" />;
+    case "socket.io":
+      return <SocketioIcon title="socket.io" width="100%" height="100%" />;
+    case "nodejs":
+      return <NodejsIcon title="nodejs" width="100%" height="100%" />;
   }
 }
 

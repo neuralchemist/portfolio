@@ -31,6 +31,33 @@ export const projects = [
   },
 
   {
+    name: "Realtime Kanban",
+    github: "https://github.com/neuralchemist/realtime-kanban-app",
+    demo: "",
+    description: [
+      "Welcome to the Full-stack Real-time Kanban App with drag-and-drop!",
+      "This project uses the MERN stack (MongoDB, Express, React & Nodejs).",
+      "It is designed for freelancers and startups, but can also be used for almost any sized company.",
+      "With this application, you can collaborate on projects with your team members from all over the world in real time.",
+      "I've leveraged my expertise in modern software development practices and methodologies to create an application that's both functional and maintainable.",
+    ],
+    icon: <BugReportIcon />,
+    techStack: [
+      "react",
+      "typescript",
+      "react-router",
+      "material-ui",
+      "react-hook-form",
+      "react-query",
+      "react-testing-library",
+      "socket.io",
+      "github",
+      "nodejs",
+      "mongodb",
+    ],
+  },
+
+  {
     name: "Buy Buy",
     github: "https://github.com/neuralchemist/BuyBuy",
     demo: "https://buybuy-e5a76.web.app/",
