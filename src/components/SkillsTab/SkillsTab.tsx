@@ -6,7 +6,7 @@ import IconStacks from "./IconStacks";
 import TabPanel from "./TabPanel";
 import { StyledSkillsTab, StyledTabs } from "./styledComponents";
 // custom data
-import { EnvStackData } from "./data/EnvStackData";
+import { OthersStackData } from "./data/OthersStackData";
 import { PLStackData } from "./data/PLStackData";
 import { ReactStackData } from "./data/ReactStackData";
 import { TestingStackData } from "./data/TestingStackData";
@@ -37,7 +37,7 @@ function SkillsTab() {
         onChange={handleChange}
         aria-label="Vertical tabs"
       >
-        <Tab label="Environment" {...allProps(0)} />
+        <Tab label="Others" {...allProps(0)} />
         <Tab label="Programming Language" {...allProps(1)} />
         <Tab label="React" {...allProps(2)} />
         <Tab label="Testing" {...allProps(3)} />
@@ -46,7 +46,7 @@ function SkillsTab() {
       </StyledTabs>
       {/* Panels */}
       <TabPanel value={value} index={0}>
-        <IconStacks techStacksData={EnvStackData} />
+        <IconStacks techStacksData={OthersStackData} />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <IconStacks techStacksData={PLStackData} />

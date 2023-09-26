@@ -8,22 +8,24 @@ function AboutMe() {
     <StyledStack>
       <StyledText variant="h3">About Me</StyledText>
       <StyledAboutMe>
-        <Typography variant="body1" color="text.secondary" textAlign="justify" lineHeight="30px">
-          Some people want to conquer the mountains, some want to conquer the
-          space. I want to embark on a journey which is much more ambitious than
-          the rest - mastering the art and science of making great software.
+        <Typography
+          variant="body1"
+          color="text.secondary"
+          textAlign="justify"
+          lineHeight="30px"
+        >
+          Some people want to conquer mountains, Some want to conquer space, but
+          I am on a journey more ambitious than the rest - mastering the art and
+          science of making great software.
           <br />
-          Boring, repetitive tasks which make people miserable, automating them
-          with software makes me happy. Machines should do the work so that
-          people have time to think.
+          Automating repetitive, soul-draining tasks with code makes me happy.
+          Machines should work, so people can dream.
           <br />
-          Each project is a conquest of its own. What seemed impossible before,
-          then working hard on it and seeing it work is the most satisfying
-          experience of working on any project.
+          Each project is a unique conquest. Turning the once-impossible into
+          reality through hard work is the most gratifying journey.
           <br />
-          My goal is to keep working on projects which are even more challenging
-          than the ones before. After all, life is either a daring adventure or
-          nothing at all.
+          I want to tackle even more challenging projects. For me, life is
+          either a daring adventure or nothing at all.
           <br />— The Stoic Developer
         </Typography>
       </StyledAboutMe>
